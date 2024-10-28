@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import {resolve} from 'path
 
 export default defineConfig({
   base: "/virtualtest/",
@@ -8,11 +9,11 @@ export default defineConfig({
 
     rollupOptions: {
       input: {
-        main: "index.html",
-        abuja: "/Abuja/index.html",
-        calabar: "/Calabar/index.html",
-        obudu: "/Obudu/index.html",
-        oldestC: "/Oldest-church/index.html",
+        main: resolve(__dirname,"index.html"),
+        abuja: resolve(__dirname,"abuja/index.html"),
+        calabar: resolve(__dirname,"calabar/index.html"),
+        obudu: resolve(__dirname,"obudu/index.html"),
+        oldestC: resolve(__dirname,"oldest-church/index.html"),
       },
       output: {
         manualChunks(id) {
