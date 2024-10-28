@@ -5,6 +5,9 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./tour.html",
     "./abuja/index.html",
+    "./obudu/index.html",
+    "./calabar/index.html",
+    "./oldest-church/index.html",
   ],
   theme: {
     screens: {

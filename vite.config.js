@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/vtng/",
+  base: "/virtualtest/",
   build: {
     rollupOptions: {
       input: {
@@ -14,3 +14,7 @@ export default defineConfig({
     },
   },
 });
+
+// git add dist
+// git commit -m "Add dist folder for GitHub Pages"
+// git push origin main   git remote add origin https://github.com/warprincegas/vtngn.git
