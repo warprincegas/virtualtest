@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.menu {
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.show-menu {
+  transform: translateY(0%);
+  transition: transform 0.5s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  left: 0;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+  top: 0;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.home-img {
+  background: url("/VTN-WEBSITE-TOUR-NIGERIA.jpg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.entertainment {
+  background: url("/VTN-ENTERTAINMENT-WEBSITE-FORMAT.jpg");
+  @apply bg-cover bg-left  bg-no-repeat;
+}
+.event {
+  background: url("/VTN-OWAMBE WEBSITE-FORMAT.jpg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.edu-trip {
+  background: url("/VTN-EDUCATION-WEBSITE-FORMAT.jpg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.real-estate {
+  background: url("/VTN-REAL-ESTATE-WEBSITE-FORMAT.jpg");
+  @apply bg-cover bg-right  bg-no-repeat;
+}
+
+.vr-img {
+  background: url("/edutrips.png");
+  @apply bg-cover bg-right bg-no-repeat;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.text-container:hover .text {
+  -webkit-line-clamp: unset;
+  white-space: normal;
+  overflow: visible;
+  transition: all 1s ease-in-out;
+}
+
+.dev-process {
+  background: url("/istockphoto-599471112-612x612 (1).webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.about-img {
+  background: url("/about-pics.png");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.vision {
+  background: url("/istockphoto-1424988699-612x612.webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.mission {
+  background: url("/istockphoto-2094337676-612x612.webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.goal {
+  background: url("/istockphoto-2148853397-612x612.webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+.contact {
+  background: url("/istockphoto-618761378-612x612.webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.project {
+  background: url("/istockphoto-1488644028-612x612.webp");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.ncm {
+  background: url("/Abuja Central Mosgue.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.calaber {
+  background: url("/calaber.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.mary-slessor {
+  background: url("/marry-slessor.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.obudu {
+  background: url("/obudu1.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.oc {
+  background: url("/oldest-church.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+.oshogbo-groove {
+  background: url("/Oshogbo-groove.jpeg");
+  @apply bg-cover bg-center  bg-no-repeat;
+}
+
+label {
+  @apply relative flex;
+}
+
+input,
+textarea {
+  @apply pb-2 focus:outline-none outline-none placeholder:text-lg flex-1 border-b-[1px] border-solid border-stone-400
+  bg-transparent;
+}
+
+label ion-icon {
+  @apply absolute right-2 bottom-2;
+}
+
+.rotate {
+  animation: rotate 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(deg0) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+
+.project-content:hover {
+  transform: translateY(0);
+}
+
+.project-content:hover .project-link {
+  opacity: 1;
+}
+
+.project-content:hover .project-name {
+  transform: translateY(-5%);
+}

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rotate {
+  animation: rotate 0.8s ease-in-out infinite alternate;
+}
+
+/* Keyframes */
+@keyframes rotate {
+  0% {
+    transform: rotate(deg0) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+
+.hotspot-label {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 3px;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Center the label */
+  white-space: nowrap;
+}
+
+.controls-options {
+  z-index: 0;
+  transform: scale(0);
+  opacity: 0;
+  transition: z-index 0.5s, transform 0.5s, border-radius 0.5s, opacity 0.5s;
+}
+
+.show-controls-option {
+  z-index: 20;
+  transform: scale(1);
+  transition: z-index 0.5s, transform 0.5s, border-radius 0.5s, opacity 0.5s;
+  opacity: 1;
+}
+
+.share-links-cont {
+  z-index: 0;
+  opacity: 0;
+}
+
+.show-share-links-cont {
+  opacity: 1;
+  z-index: 20;
+  transition: opacity 0.4s, z-index 0.4s;
+}
