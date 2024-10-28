@@ -11,10 +11,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname,"index.html"),
-        abuja: resolve(__dirname,"abuja/index.html"),
-        calabar: resolve(__dirname,"calabar/index.html"),
-        obudu: resolve(__dirname,"obudu/index.html"),
-        oldestC: resolve(__dirname,"oldest-church/index.html"),
+        abuja: resolve(__dirname,"Abuja/index.html"),
+        calabar: resolve(__dirname,"Calabar/index.html"),
+        obudu: resolve(__dirname,"Obudu/index.html"),
+        oldestC: resolve(__dirname,"Oldest-church/index.html"),
       },
       output: {
         manualChunks(id) {
