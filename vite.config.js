@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import {resolve} from 'path;
+import {resolve} from 'path';
 import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
