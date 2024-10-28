@@ -7,13 +7,13 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000, // Set the chunk size warning limit (in KB)
 
     rollupOptions: {
-      input: {
-        main: "index.html",
-        abuja: "Abuja/index.html",
-        calabar: "Calabar/index.html",
-        obudu: "Obudu/index.html",
-        oldestC: "Oldest-church/index.html",
-      },
+      // input: {
+      //   main: "index.html",
+      //   abuja: "Abuja/index.html",
+      //   calabar: "Calabar/index.html",
+      //   obudu: "Obudu/index.html",
+      //   oldestC: "Oldest-church/index.html",
+      // },
       output: {
         manualChunks(id) {
           // Custom chunking for dependencies
