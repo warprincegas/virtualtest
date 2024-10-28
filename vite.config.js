@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
-import {resolve} from 'path';
+import {resolve} from 'path;
+import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
   base: "/virtualtest/",
 
   build: {
-    chunkSizeWarningLimit: 1000, // Set the chunk size warning limit (in KB)
-
+    chunkSizeWarningLimit: 1000,
+    plugins: [Inspect()],
     rollupOptions: {
       input: {
         main: resolve(__dirname,"index.html"),
