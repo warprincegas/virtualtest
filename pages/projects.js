@@ -22,7 +22,7 @@ export default function Project() {
       <main
         class="text-stone-100 sm:grid sm:grid-cols-2 sm:p-1 sm:gap-1 sm:gap-y-4 bg-black lg:grid-cols-4"
       >
-        <a href="/virtualtest/Abuja/index.html">
+        <a href="/abuja/index.html">
           <section class="ncm h-[400px] cursor-pointer font-sans">
             <div class="bg-[rgba(23,23,23,.65)] h-full py-6 px-3">
               <div
@@ -52,7 +52,7 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="/virtualtest/Calabar/">
+        <a href="/calabar/">
           <section class="calaber h-[400px] cursor-pointer font-sans">
             <div class="bg-[rgba(23,23,23,.65)] h-full p-6">
               <div
@@ -112,7 +112,7 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="/virtualtest/Obudu/index.html">
+        <a href="obudu/index.html">
           <section class="obudu h-[400px] cursor-pointer font-sans">
             <div class="bg-[rgba(23,23,23,.65)] h-full p-6">
               <div
@@ -142,7 +142,7 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="/virtualtest/Oldest-church/">
+        <a href="/oldest-church/">
           <section class="oc h-[400px] cursor-pointer font-sans">
             <div class="bg-[rgba(23,23,23,.65)] h-full p-6">
               <div
