@@ -52,7 +52,7 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="calabar/">
+        <a href="calabar/index.html">
           <section class="calaber h-[400px] cursor-pointer font-sans">
             <div class="bg-[rgba(23,23,23,.65)] h-full p-6">
               <div
