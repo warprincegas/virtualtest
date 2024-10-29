@@ -8,14 +8,14 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000,
     plugins: [Inspect()],
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        abuja: resolve(__dirname, "abuja/index.html"),
-        calabar: resolve(__dirname, "calabar/index.html"),
-        obudu: resolve(__dirname, "obudu/index.html"),
-        oldestC: resolve(__dirname, "oldest-church/index.html"),
-      },
+    // rollupOptions: {
+    //   input: {
+    //     main: resolve(__dirname, "index.html"),
+    //     abuja: resolve(__dirname, "abuja/index.html"),
+    //     calabar: resolve(__dirname, "calabar/index.html"),
+    //     obudu: resolve(__dirname, "obudu/index.html"),
+    //     oldestC: resolve(__dirname, "oldest-church/index.html"),
+    //   },
       output: {
         manualChunks(id) {
           // Custom chunking for dependencies
