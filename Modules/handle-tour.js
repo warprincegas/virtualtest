@@ -168,9 +168,17 @@ export function handleTour(location) {
     }
   });
 
+  window.addEventListener("click", onMouseClick, { passive: true });
+  window.addEventListener("touchstart", onMouseClick, { passive: true });
+
   function onMouseClick(event) {
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    if (event.type === "touchstart") {
+      mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
+    } else {
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    }
 
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(scene.children);
@@ -186,8 +194,6 @@ export function handleTour(location) {
       }
     }
   }
-
-  window.addEventListener("click", onMouseClick, false);
 
   function animate() {
     requestAnimationFrame(animate);
