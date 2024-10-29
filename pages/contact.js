@@ -1,8 +1,8 @@
 export default function Contact() {
   return `
-                <section class="contact mt-20 md:mt-0">
+                <section class="contact mt-20 md:mt-0 lg:h-[80vh]">
         <div
-          class="bg-[rgba(23,23,23,.7)] h-full flex justify-center items-start flex-col gap-4 px-8 py-28 md:bg-gradient-to-b from-[rgba(23,23,23,7)] to-[rgba(23,23,23,.5)] lg:h-[65vh] lg:items-center"
+          class="bg-[rgba(23,23,23,.7)] h-full flex justify-center items-start flex-col gap-4 px-8 py-28 md:bg-gradient-to-b from-[rgba(23,23,23,7)] to-[rgba(23,23,23,.5)] lg:items-center lg:h-[80vh]"
         >
           <h1 class="font-bold text-4xl tracking-wider">Contact us</h1>
           <div class="flex flex-col lg:justify-center lg:items-center">

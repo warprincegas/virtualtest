@@ -1,5 +1,6 @@
 export default function About() {
   return ` <section class="h-[45vh] bg-center mt-20 about-img md:mt-0 md:h-[60vh] lg:h-[80vh]">
+  
       <div class="bg-[rgba(23,23,23,.65)] h-full flex justify-center items-start  flex-col p-8  md:bg-gradient-to-b from-[rgba(23,23,23,7)]  to-[rgba(23,23,23,.5)] md:items-center">
 
       <h1 class="font-bold text-4xl tracking-wider">Hello!<h1>
