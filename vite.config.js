@@ -15,15 +15,16 @@ export default defineConfig({
         calabar: resolve(__dirname, "calabar/index.html"),
         obudu: resolve(__dirname, "obudu/index.html"),
         oldestC: resolve(__dirname, "oldest-church/index.html"),
+        osogbo: resolve(__dirname, "osogbo/index.html"),
+        maryS: resolve(__dirname, "maryslessor/index.html"),
       },
       output: {
         manualChunks(id) {
-          // Custom chunking for dependencies
           if (id.includes("node_modules")) {
-            return "vendor"; // Bundles all dependencies from node_modules in a single 'vendor' chunk
+            return "vendor";
           }
           if (id.includes("src/components")) {
-            return "components"; // Groups components into a separate chunk
+            return "components";
           }
         },
       },

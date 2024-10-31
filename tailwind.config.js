@@ -7,7 +7,8 @@ export default {
     "./abuja/index.html",
     "./obudu/index.html",
     "./calabar/index.html",
-    "./oldest-church/index.html",
+    "./marryslessor/index.html",
+    "./osogbo/index.html",
   ],
   theme: {
     screens: {

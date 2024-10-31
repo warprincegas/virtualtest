@@ -86,7 +86,39 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="#">
+         <a href="osogbo/">
+          <section
+            class="oshogbo-groove h-[400px] cursor-pointer font-sans sm:rounded-lg"
+          >
+            <div class="bg-[rgba(23,23,23,.8)] h-full p-6 sm:rounded-lg">
+              <div
+                class="flex-col gap-5 flex justify-center items-start h-full translate-y-[40px] project-content transition-all duration-500 py-6 px-3"
+              >
+                <h1
+                  class="font-medium text-2xl tracking-wider translate-y-[5px] duration-300 project-name sm:font-bold"
+                >
+                  Oshogbo Groove
+                </h1>
+                <span class="tracking-wider text-base sm:text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident similique repudiandae ullam earum iure adipisci, ut,
+                  exercitationem eius quidem, accusantium atque iste animi eum
+                  doloribus amet natus et ex! Veritatis?
+                </span>
+                <div
+                  class="flex items-center w-full gap-1 text-sm opacity-0 duration-500 project-link mt-3"
+                >
+                  <div class="">VIEW PROJECT</div>
+                  <ion-icon
+                    name="arrow-forward-circle-outline"
+                    class="text-base"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a href="maryslessor/">
           <section
             class="mary-slessor h-[400px] cursor-pointer font-sans sm:rounded-lg"
           >
@@ -180,37 +212,6 @@ export default function Project() {
             </div>
           </section>
         </a>
-        <a href="#">
-          <section
-            class="oshogbo-groove h-[400px] cursor-pointer font-sans sm:rounded-lg"
-          >
-            <div class="bg-[rgba(23,23,23,.8)] h-full p-6 sm:rounded-lg">
-              <div
-                class="flex-col gap-5 flex justify-center items-start h-full translate-y-[40px] project-content transition-all duration-500 py-6 px-3"
-              >
-                <h1
-                  class="font-medium text-2xl tracking-wider translate-y-[5px] duration-300 project-name sm:font-bold"
-                >
-                  Oshogbo Groove
-                </h1>
-                <span class="tracking-wider text-base sm:text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Provident similique repudiandae ullam earum iure adipisci, ut,
-                  exercitationem eius quidem, accusantium atque iste animi eum
-                  doloribus amet natus et ex! Veritatis?
-                </span>
-                <div
-                  class="flex items-center w-full gap-1 text-sm opacity-0 duration-500 project-link mt-3"
-                >
-                  <div class="">VIEW PROJECT</div>
-                  <ion-icon
-                    name="arrow-forward-circle-outline"
-                    class="text-base"
-                  ></ion-icon>
-                </div>
-              </div>
-            </div>
-          </section>
-        </a>
+       
       </main>`;
 }

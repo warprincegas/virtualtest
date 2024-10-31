@@ -62,6 +62,7 @@ export function handleTour(location) {
     }
 
     const textureLoader = new THREE.TextureLoader(loadingManager);
+    console.log(roomData.image);
 
     const newTexture = textureLoader.load(
       roomData.image,
