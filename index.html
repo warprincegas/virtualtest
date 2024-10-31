@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VirtualTourNG</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script type="module" crossorigin src="/virtualtest/assets/main-BZpilaI4.js"></script>
+    <link rel="modulepreload" crossorigin href="/virtualtest/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/virtualtest/assets/main-b1B7_Uct.css">
+  </head>
+  <body class="bg-slate-200">
+    <header
+      class="bg-slate-200 absolute top-0 left-0 right-0 h-20 flex items-center justify-between py-10 px-6 z-[100] md:hidden"
+    >
+      <img src="logo.jpg" class="w-[140px]" alt="Logo" />
+      <div id="menu-btn" class="z-40 hamburger">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </div>
+    </header>
+
+    <!-- mobile-menu -->
+    <div
+      id="menu"
+      class="absolute top-0 bottom-0 left-0 flex flex-col w-full h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-gray-900 uppercase bg-slate-200 z-50 menu"
+    >
+      <a href="#" class="hover:text-gray-500">Home</a>
+      <a href="#/about" class="hover:text-gray-500">About</a>
+      <a href="#/projects" class="hover:text-gray-500">Project</a>
+      <a href="#/contact" class="hover:text-gray-500">Contact</a>
+    </div>
+    <nav
+      class="hidden md:flex items-center justify-around bg-[rgba(23,23,23,.3)] absolute text-slate-100 right-0 left-0 py-3"
+    >
+      <img src="logo.jpg" class="w-[120px]" alt="" />
+      <ul class="flex gap-4 text-2xl">
+        <a
+          href="#/"
+          class="md:border-transparent md:border-b-[2px] md:hover:border-white md:pb-1 transition-all duration-300"
+          ><li>Home</li></a
+        >
+        <a
+          href="#/about"
+          class="md:border-transparent md:border-b-[2px] md:hover:border-white md:pb-1 transition-all duration-300"
+          ><li>About</li></a
+        >
+        <a
+          href="#/projects"
+          class="md:border-transparent md:border-b-[2px] md:hover:border-white md:pb-1 transition-all duration-300"
+          ><li>Project</li></a
+        >
+        <a
+          href="#/contact"
+          class="md:border-transparent md:border-b-[2px] md:hover:border-white md:pb-1 transition-all duration-300"
+          ><li>Contact</li></a
+        >
+      </ul>
+      <ul class="flex text-xl font-semibold items-center gap-4">
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </ul>
+    </nav>
+
+    <div
+      class="fixed top-0 left-0 right-0 bottom-0 z-[100] flex justify-center items-center bg-stone-50 loader"
+    >
+      <div class="w-full p-6 flex flex-col items-center justify-center">
+        <div
+          class="loading-box max-w-[60px] m-8 rotate grid grid-cols-2 gap-[5px]"
+        >
+          <div class="loading-dot w-3 h-3 bg-green-400 rounded-full"></div>
+          <div class="loading-dot w-3 h-3 bg-green-400 rounded-full"></div>
+          <div class="loading-dot w-3 h-3 bg-green-400 rounded-full"></div>
+          <div class="loading-dot w-3 h-3 bg-green-300 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+    <div id="app" class="text-stone-300 font-sans"></div>
+
+    <footer
+      class="bg-gradient-to-b from-black to-[rgb(23,23,23)] px-12 pt-20 flex flex-col items-start gap-5 text-stone-200 md:px-0"
+    >
+      <h1 class="font-extrabold text-2xl md:text-3xl md:px-32">
+        VirtualTourNG
+      </h1>
+      <p class="text-sm text-stone-200 md:text-lg md:px-32">
+        VirtualTourNG is a tourism brand that is key of changing the traditional
+        scope of tourism in Nigeria, also help and promote tourism and provide a
+        unique experience for both local residents and international travellers,
+        using virtual reality (VR) technology to allow people to explore Nigeria
+        without physically being there.
+      </p>
+      <div class="w-full mt-20 md:px-32">
+        <a
+          href="https://youtube.com/@virtualtourng?si=rCZCN7WgkVvEsioD"
+          class="flex items-center gap-5"
+        >
+          <ion-icon name="logo-youtube" class="text-2xl"></ion-icon>
+          <p class="text-xl tracking-wider">VirtualTourNG</p>
+        </a>
+        <div
+          class="flex gap-1 flex-col mt-6 lg:grid lg:grid-cols-[1fr,2fr,1fr] sm:w-[80%] mx-auto lg:w-full"
+        >
+          <a href="https://www.youtube.com/watch?v=Uksa_q12RQs">
+            <img
+              src="VR Exploring the Wonders of Agbokim Falls Virtual Tour NG.png"
+              alt=""
+            />
+          </a>
+          <div class="grid grid-cols-2 gap-1 l">
+            <a href="https://www.youtube.com/watch?v=o7Jr_X4PydI">
+              <img src="VR Iyake Lake Ado-Awaye Virtual Tour NG.png" alt="" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=cIVtnbbUbxU">
+              <img
+                src="VR Oloojo Festival Celebrating Culture and Tradition Virtual Tour NG.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <a href="https://www.youtube.com/watch?v=e4JxsHNfPoo">
+            <img src="VR Olumirin Waterfall - 360° Video.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <span
+        class="bg-[rgb(53,53,53)] py-2 block mt-24 md:mt-10 text-center text-xs tracking-widest w-full md:p-2"
+        >COPYRIGHT VIRTUAL TOUR NG 2024</span
+      >
+    </footer>
+  </body>
+</html>
