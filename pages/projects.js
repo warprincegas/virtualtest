@@ -1,5 +1,5 @@
 export default function Project() {
-  return `        <section
+  return `      <section
         class="project mt-16 h-[50vh] md:mt-0 bg-center md:h-[60vh] lg:h-[80vh]"
       >
         <div
